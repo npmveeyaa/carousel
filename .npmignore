@@ -1,0 +1,9 @@
+node_modules/
+src/
+rollup.config.js
+.gitignore
+.npmignore
+*.log
+npm-debug.log*
+.DS_Store
+
