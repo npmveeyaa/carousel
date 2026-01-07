@@ -1,5 +1,7 @@
 import React from 'react';
-import { Carousel as BootstrapCarousel, Container, Button } from 'react-bootstrap';
+import { Carousel as BootstrapCarousel, Container } from 'react-bootstrap';
+// New package button
+import { Button } from '@veeyaainnovatives/button';
 
 /**
  * Hero Carousel Component
@@ -97,10 +99,14 @@ const HeroCarousel = ({
                       )}
                       {slide.buttonText && (
                         <Button 
-                          bsPrefix="home" 
-                          variant="button" 
-                          className="mt-4" 
-                          size="lg" 
+                          className="home-button mt-4"
+                          backgroundColor="#677a58"
+                          color="#ffffff"
+                          hoverBackgroundColor="#5a6a4a"
+                          padding="13px 40px"
+                          fontSize="16px"
+                          fontWeight="500"
+                          borderRadius="100px"
                           onClick={slide.buttonOnClick}
                         >
                           {slide.buttonText}
